@@ -11,3 +11,19 @@ You're building the backend in Django and your first task is to expose an initia
 Since this is your startup and your product, that you are going to maintain and extend for some time; it's up to you to setup and use the practices that you think are important to you. And you can use any Python library that you want to use. You're the boss! ;-)
 
 We've setup a Django skeleton project for you + setup Docker. Feel free to use Docker for dev or Python venv for your local development. You can use use any Python libraries you want to use. You do not need to setup any user registration or management, it's fine to create them on the shell and use session authentication for the API. We expect you to deliver your solution as a PR to our public repo.
+
+
+## API
+
+### Send a message
+
+POST: /users/<sender-id>/message?receiver_id=x
+
+### Get conversation
+
+GET: /users/<sender-id>/conversation?receiver_id=x
+
+### Get users
+
+GET: /users
+
